@@ -18,7 +18,7 @@ Parameters:
   GitHubURL:
     Type: String
     Description: Github URL of the project
-    Default: https://github.com/awslabs/amazon-bedrock-agentcore-samples.git
+    Default: https://github.com/rr-on-gh/amazon-bedrock-agentcore-samples.git
 
   AgentDirectory:
     Type: String
@@ -813,6 +813,7 @@ Resources:
                   - bedrock:InvokeModelWithResponseStream
                 Resource:
                   - 'arn:aws:bedrock:*::foundation-model/*'
+                  - !Sub 'arn:aws:bedrock:${AWS::Region}:${AWS::AccountId}:*'
       Tags:
         - Key: Name
           Value: !Sub '${AWS::StackName}-Memory-Execution-Role'
