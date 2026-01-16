@@ -43,7 +43,7 @@ click==8.3.0
     # via uvicorn
 docstring-parser==0.17.0
     # via strands-agents
-fastapi==0.119.0
+fastapi==0.120.0
     # via monitoring-strands-agent (pyproject.toml)
 google-api-core==2.26.0
     # via a2a-sdk

@@ -67,7 +67,7 @@ distro==1.9.0
     # via openai
 docstring-parser==0.17.0
     # via google-cloud-aiplatform
-fastapi==0.119.0
+fastapi==0.120.0
     # via google-adk
 fastuuid==0.13.5
     # via litellm
